@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
+
+/* ------------------------- */
+/* Reset Styling */
+/* ------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------- */
+/* Basic Styling */
+/* ------------------------- */
+body {
+  width: 100%;
+  height: 100%;
+  line-height: 1.4;
+  font-size: 10px;
+}
+a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+h1,
+h2 {
+  font-size: 2.2rem;
+  font-family: "Lato", sans-serif;
+}
+h3 {
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+}
+p,
+li {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+
+/* ------------------------- */
+/* Utility Styling */
+/* ------------------------- */
+.btn {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-primary {
+  background: #d40c0c;
+  color: #fff;
+}
+.btn-primary:hover {
+  color: #d40c0c;
+  background: #fff;
+}
+.container {
+  max-width: 1280px;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.center-heading {
+  position: relative;
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 1.2rem 0;
+}
+.center-heading::after{
+  content: '';
+  position: absolute;
+  top: 2rem;
+  left: 46.2%;
+  height: 2px;
+  width: 100px;
+  text-align: center;
+  background: #000;
+}
+.light-bg {
+  background: #f9f9ff;
+}
+.dark-bg {
+  background: rgba(13, 110, 139, 0.65);
+}
+.h3-heading {
+  font-weight: 100;
+  font-size: 1.3rem;
+}
+.py-1 {
+  padding: 60px 0;
+}
+.py-2 {
+  padding: 40px 0;
+}
+
+/* ------------------------- */
+/* Navbar styling */
+/* ------------------------- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+}
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 16px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+nav .mainMenu li a:hover {
+  color: #90acd1;
+}
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+  color: #fff;
+}
+nav .closeMenu {
+  color: #fff;
+  margin: 20px;
+}
+nav .closeMenu,
+.icons i {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+  color: #fff;
+}
+.fa-linkedin:hover {
+  color: rgb(0, 119, 181);
+}
+.fa-medium:hover{
+  color: #333;
+}
+.fa-github:hover {
+  color: #333;
+}
+nav .logo {
+  color: #fff;
+  margin: 6px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* ------------------------- */
+/* Header styling */
+/* ------------------------- */
+header {
+  background: rgba(13, 110, 139, 0.65);
+  position: relative;
+  height: 100vh;
+}
+header::before {
+  content: "";
+  background: url(../img/contactbackground.jpg) no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+/* ------------------------- */
+/* Showcase styling */
+/* ------------------------- */
+.text-col {
+  flex: 1;
+  color: #fff;
+}
+.text-col h2 {
+  font-size: 2.5rem;
+}
+.text-col p {
+  font-size: 1.3rem;
+}
+.text-col a {
+  margin-top: 3.2rem;
+}
+.img-col {
+  margin: 0 4rem;
+}
+.img-col img {
+  width: 100%;
+}
+
+/* ------------------------- */
+/* About Section Styling */
+/* ------------------------- */
+.about-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.about-img {
+  background: rgba(13, 110, 139, 0.65);
+  border-radius: 5px;
+  margin: 0 20px;
+}
+.about-img > div {
+  width: 100%;
+  border-radius: 5px;
+}
+.about-img img{
+  text-align: center;
+  width: 100%;
+}
+.about-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 1.5rem;
+}
+.about-text h3 {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.first-heading{
+  margin-bottom: 1.4rem;
+}
+.second-heading{
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+}
+.about-text p {
+  font-weight: lighter;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+.skill-input{
+  width: 400px;
+  height: 10px;
+  border-radius: 5px;
+  background: #000;
+  margin-bottom: 10px;
+}
+.skill-input div{
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background: rgba(13, 110, 139, 0.65);
+}
+
+.skill-input #html-css{
+  width: 80%;
+}
+.skill-input #javascript{
+  width: 60%;
+}
+.skill-input #content-writing{
+  width: 75%;
+}
+
+.skill-detail{
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.skill-detail > p{
+  font-weight: 700;
+}
+
+/* ------------------------- */
+/* Cerebration Styling */
+/* ------------------------- */
+.cerebration-section{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+.cerebration-section > div{
+  flex: 1;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 10px;
+  background: #f9f9ff;
+  margin: 10px 10px;
+  padding: 20px 30px;
+  transition: background 1.5s, color 1.5s;
+}
+.box:hover{
+  background: rgba(13, 110, 139, 0.45);
+  color: #fff;
+}
+.box:hover i{
+  background: rgba(13, 110, 139, 0.45);
+  color: #fff;
+  border-radius: 50%;
+}
+.box h4{
+  font-size: 1.3rem;
+}
+.box p{
+  font-weight: lighter;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+.box i{
+  color: rgba(13, 110, 139, 0.45);
+  font-size: 2.2rem;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+.lead{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+/* ------------------------- */
+/* Contact Styling */
+/* ------------------------- */
+.contact{
+  position: relative;
+  background: rgba(0,0,0,0.8);
+}
+.contact::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/contactbackground.jpg) no-repeat center center/cover;
+  z-index: -5;
+}
+.container.hero{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-form{
+  width: 100%;
+  padding: 1.3rem 0;
+}
+.contact-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-content p{
+  font-weight: lighter;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+.contact-content .contact-row-1,
+.contact-content .contact-row-2{
+  flex: 1;
+}
+.contact-row-1{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 15px;
+}
+.contact-row-1 > div{
+  display: flex;
+  align-items: flex-start;
+  padding: 8px 0;
+}
+.contact-row-1 > div i{
+  color: #90acd1;
+  font-size: 1.3rem;
+  margin: .3rem 0;
+}
+.contact-row-1 > div div{
+  margin-left: 10px;
+}
+.contact-row-1 > div div p{
+  padding: .1rem;
+}
+.contact-row-2{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+}
+.contact-row-2 h3{
+  font-size: 1.5rem;
+}
+.contact-row-2 p:nth-child(2){
+  padding: 5px 0;
+}
+.input-row{
+   display: flex;
+} 
+.input-row .form-controls{
+  flex: 1;
+  margin-right: 20px;
+}
+.input-row .form-controls input{
+  margin-right: 40px;
+}
+.form-controls input,
+.form-controls textarea{
+  display: inline-block;
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0 ;
+  background: #fff;
+}
+.form-controls input:focus,
+.form-controls textarea:focus{
+  outline: none;
+}
+.form-controls textarea{
+  height: 100px;
+}
+.contact-form .button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+.button .btn{
+  font-size: 1.3rem;
+  padding:  10px 20px;
+}
+
+/* ------------------------- */
+/* Footer Styling */
+/* ------------------------- */
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px 0;
+  background: rgba(13, 110, 139, 0.65);
+}
+.footer a{
+  color: #fff;
+  font-size: .8rem;
+}
+.footer .social > *{
+  margin-right: 30px;
+}
+.footer p{
+  color: #fff;
+  font-weight: lighter;
+  font-size: 1rem;
+  text-align: justify;
+  margin: 5px 0;
+}
+.love{
+  color: red;
+}
