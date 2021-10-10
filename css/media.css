@@ -39,7 +39,7 @@
     padding: 30px 0;
     background: rgba(13, 110, 139, 0.95);
     display: none;
-    transition: top 1s ease;
+    transition: all 1s ease;
   }
   nav .mainMenu .closeMenu {
     display: block;
@@ -95,6 +95,18 @@
   .cerebration-section > div{
     flex-direction: column;
     align-items: center;
+  }
+  .projects-section{
+    padding: 0 20px;
+  }
+  .projects-section > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .image-container{
+    width: 100%;
   }
   .box{
     width: 98%;
