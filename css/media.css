@@ -1,4 +1,31 @@
 /* Media Queries */
+@media (max-height: 380px) {
+   .text-col h2 {
+    font-size: 2rem;
+  }
+  .text-col p {
+    font-size: 1.2rem;
+  }
+  .text-col a {
+    margin-top: 1.5rem;
+  }
+  .text-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0;
+    padding: 0 60px;
+  }
+}
+@media (max-width: 918px){
+  .img-col{
+    display: none;
+  }
+  header {
+    height: 100%;
+  }
+}
+
 @media (max-width: 780px) {
   nav .mainMenu {
     height: 60%;
@@ -41,6 +68,7 @@
     align-items: flex-start;
     margin: 150px 0;
     padding: 0 60px;
+    height: 80%;
   }
   .about-section {
     flex-direction: column;
@@ -62,8 +90,14 @@
     padding: 0 40px;
   }
   .cerebration-section{
-    padding: 0 50px;
+    padding: 0 40px;
+  }
+  .cerebration-section > div{
     flex-direction: column;
+    align-items: center;
+  }
+  .box{
+    width: 98%;
   }
   .contact-content{
     display: block;
@@ -93,6 +127,7 @@
   }
   .text-col {
     padding: 0 20px;
+    justify-content: center;
   }
   .text-col h2 {
     font-size: 2rem;
@@ -108,7 +143,6 @@
   }
   .cerebration-section{
     padding: 0 10px;
-    flex-direction: column;
   }
   .cerebration-section > div{
     width: 100%;

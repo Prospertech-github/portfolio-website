@@ -66,8 +66,7 @@ ul {
   max-width: 1280px;
   margin: auto;
   overflow: hidden;
-  display: flex;
-  align-items: center;
+  height: 100%;
 }
 .center-heading {
   position: relative;
@@ -169,7 +168,7 @@ nav .logo {
 header {
   background: rgba(13, 110, 139, 0.65);
   position: relative;
-  height: 100vh;
+  height: 100%;
 }
 header::before {
   content: "";
@@ -185,24 +184,35 @@ header::before {
 /* ------------------------- */
 /* Showcase styling */
 /* ------------------------- */
+.header-home{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 0 0 15px;
+}
 .text-col {
   flex: 1;
   color: #fff;
+  flex-shrink: unset;
 }
 .text-col h2 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
 }
 .text-col p {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 600;
 }
 .text-col a {
   margin-top: 3.2rem;
 }
 .img-col {
   margin: 0 4rem;
+  height: 100%;
 }
 .img-col img {
   width: 100%;
+  height: 85%;
 }
 
 /* ------------------------- */
@@ -290,22 +300,21 @@ header::before {
 /* ------------------------- */
 /* Cerebration Styling */
 /* ------------------------- */
-.cerebration-section{
-  display: flex;
-  justify-content: center;
+ .cerebration-section{
   margin: 30px 0;
 }
 .cerebration-section > div{
-  flex: 1;
+  display: flex;
 }
 .box{
+  width: 48%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   border-radius: 10px;
   background: #f9f9ff;
-  margin: 10px 10px;
+  margin: 7px 10px;
   padding: 20px 30px;
   transition: background 1.5s, color 1.5s;
 }
