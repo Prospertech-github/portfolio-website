@@ -376,6 +376,9 @@ header::before {
   cursor: pointer;
   border-radius: 10px;
 }
+.image-container img:hover{
+  transform: scale(1.1);
+}
 
 
 /* ------------------------- */
